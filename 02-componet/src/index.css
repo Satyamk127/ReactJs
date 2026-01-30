@@ -1,0 +1,19 @@
+
+*{
+  margin: 0;
+ 
+}
+
+
+
+body{
+  background-color: #1111;
+}
+.card{
+  background-color: rgb(188, 2, 2);
+
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  color: white;
+}
