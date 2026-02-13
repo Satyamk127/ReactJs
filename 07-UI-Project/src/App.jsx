@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div class="flex  gap-2 p-8 sm: flex-col sm:items-center sm:gap-8 sm:py-4 ...">
-        <img class="mx-auto block h-24 rounded-t-4xl sm:mx-0 sm:shrink-0" src="https://images.unsplash.com/photo-1505968409348-bd000797c92e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZyZWUlMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D" alt="" />
+        <img class="mx-auto block h-24 rounded-full sm:mx-0 sm:shrink-0" src="https://images.unsplash.com/photo-1505968409348-bd000797c92e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZyZWUlMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D" alt="" />
         <div class="space-y-2 text-center sm:text-left">
           <div class="space-y-0.5">
             <p class="text-lg font-semibold text-black">Erin Lindford</p>
