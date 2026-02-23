@@ -1,0 +1,18 @@
+
+
+.ram {
+  height: 300px;
+  display: auto;
+  width: 250px;
+  background-color: rgb(167, 151, 151);
+  /* margin-left: 40vh;
+  margin-top: 30vh; */
+  color: white;
+  padding: 10px 30px;
+}
+.ram>p{
+  margin-top: 40px;
+}
+.ram>h2{
+  margin-top: 40px;
+}
