@@ -1,0 +1,21 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(25, 202, 31, 0.375);
+    padding: 10px;
+}
+.div >ul{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  text-decoration: none;
+  margin: 10px;
+}
+body{
+    margin: 0px;
+    padding:0px;
+}
+.a{
+    text-decoration: none;
+    color: black;
+}
