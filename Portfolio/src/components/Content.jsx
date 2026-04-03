@@ -1,16 +1,13 @@
 
 const Content = () => {
   return (
-    <section className="bg-black d-flex p-1  align-item-center">
-
-      <div className='pt-3 p-5 '>
-     
-        <h5 className="text-light"> This is My protfolio</h5>
-        <a className="text-light  text-decoration-none mx-2" href="">Github</a>
-        <a className="text-light text-decoration-none " href="">LinkedIn</a>
-       
-      </div>
-    </section>
+            <section className="bg-dark text-white p-3">
+            <p>
+                My Profile Links: 
+                <a className="text-white text-decoration-none mx-3" href="https://www.github.com">Github</a>
+                <a className="text-white text-decoration-none" href="https://www.linkedin.com">LinkedIn</a>
+            </p>
+        </section>
   );
 }
 export default Content;
