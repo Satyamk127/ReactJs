@@ -1,0 +1,281 @@
+.airbnb-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 248, 248, 0.98)),
+    radial-gradient(circle at top, rgba(255, 90, 95, 0.08), transparent 32%);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 28px 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ff385c;
+  font-weight: 800;
+  font-size: 1.75rem;
+  letter-spacing: -0.04em;
+}
+
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+.brand-name {
+  font-size: 1.8rem;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.menu-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px 14px;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  color: #6a6a6a;
+  font: inherit;
+  cursor: pointer;
+}
+
+.menu-item.is-active {
+  border-bottom-color: #222;
+  color: #111;
+}
+
+.menu-icon {
+  font-size: 1.3rem;
+}
+
+.menu-badge {
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: #10375c;
+  color: #fff;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #222;
+  font-size: 0.95rem;
+}
+
+.account-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.avatar {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #717171;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.search-panel {
+  padding: 28px 24px 26px;
+  border-bottom: 1px solid #ececec;
+  background: linear-gradient(180deg, #fff 0%, #fcfcfc 100%);
+}
+
+.search-bar {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1fr auto;
+  align-items: center;
+  gap: 0;
+  max-width: 880px;
+  margin: 0 auto;
+  padding-left: 18px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.search-field {
+  padding: 14px 18px;
+  text-align: left;
+}
+
+.search-field + .search-field {
+  border-left: 1px solid #ececec;
+}
+
+.search-label {
+  display: block;
+  margin-bottom: 3px;
+  color: #222;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.search-value {
+  color: #717171;
+  font-size: 0.92rem;
+}
+
+.search-button {
+  width: 48px;
+  height: 48px;
+  margin-right: 9px;
+  border: 0;
+  border-radius: 50%;
+  background: #ff385c;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.experience-section {
+  padding: 18px 18px 28px;
+}
+
+.section-heading {
+  margin-bottom: 14px;
+}
+
+.section-heading h1 {
+  margin: 0;
+  color: #222;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.experience-card {
+  min-width: 0;
+}
+
+.experience-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.experience-card h2 {
+  margin: 0 0 2px;
+  color: #222;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.experience-card p {
+  margin: 0;
+  color: #717171;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 1100px) {
+  .topbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .experience-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    padding: 16px;
+  }
+
+  .brand-name {
+    font-size: 1.5rem;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .account {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search-panel {
+    padding: 18px 16px 20px;
+  }
+
+  .search-bar {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 28px;
+  }
+
+  .search-field,
+  .search-field + .search-field {
+    border: 0;
+    border-radius: 16px;
+    background: #f7f7f7;
+  }
+
+  .search-button {
+    width: 100%;
+    border-radius: 16px;
+    margin: 0;
+  }
+
+  .experience-section {
+    padding-inline: 16px;
+  }
+
+  .section-heading h1 {
+    font-size: 1.5rem;
+  }
+
+  .experience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
