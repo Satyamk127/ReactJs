@@ -1,0 +1,392 @@
+.app-shell {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.25rem 2rem 2rem;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #fff;
+}
+
+.top-nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 180px;
+}
+
+.brand-mark {
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 2px solid #ff385c;
+  border-radius: 999px;
+  position: relative;
+}
+
+.brand-mark::after {
+  content: '';
+  position: absolute;
+  inset: 0.38rem;
+  border: 1.5px solid #ff385c;
+  border-radius: 999px;
+}
+
+.brand-text {
+  font-size: 2.15rem;
+  font-weight: 700;
+  color: #ff385c;
+  letter-spacing: -0.04em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.95rem 1.15rem 1.2rem;
+  color: #353535;
+  font-size: 1.05rem;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+  color: #111;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0.35rem;
+  height: 3px;
+  border-radius: 999px;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+.nav-item-active::after {
+  background-color: #111;
+}
+
+.nav-icon {
+  font-size: 1.35rem;
+}
+
+.nav-badge {
+  position: absolute;
+  top: 0.15rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  background-color: #0b2c59;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 220px;
+  justify-content: flex-end;
+}
+
+.host-btn {
+  border: 0;
+  background: transparent;
+  color: #111;
+  font-size: 1rem;
+  padding: 0.8rem 0.6rem;
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #d4d4d4;
+  border-radius: 999px;
+  background-color: #fff;
+  color: #111;
+}
+
+.menu-lines {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.menu-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #666;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.search-bar {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr auto;
+  align-items: center;
+  gap: 0;
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.8rem 0.9rem 0.8rem 1rem;
+  border: 1px solid #dfdfdf;
+  border-radius: 999px;
+  background-color: #fff;
+  box-shadow: 0 10px 32px rgba(17, 17, 17, 0.12);
+}
+
+.search-segment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  padding: 0.35rem 1.25rem;
+  border: 0;
+  border-right: 1px solid #dfdfdf;
+  background: transparent;
+  text-align: left;
+}
+
+.search-segment:last-of-type {
+  border-right: 0;
+}
+
+.search-title {
+  color: #111;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.search-value {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.search-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.3rem;
+  height: 4.3rem;
+  border: 0;
+  border-radius: 50%;
+  background-color: #ff0a54;
+  color: #fff;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.page-content {
+  padding: 3rem 2rem;
+}
+
+.page-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.25rem;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 18px 45px rgba(17, 17, 17, 0.06);
+}
+
+.page-label {
+  margin: 0 0 0.75rem;
+  color: #ff385c;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page-section h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #111;
+}
+
+.page-section p {
+  margin: 0;
+  color: #5c5c5c;
+  font-size: 1rem;
+}
+
+.experience-panel {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience-header h1 {
+  margin: 0;
+  color: #111;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.experience-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 50%;
+  background-color: #171717;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(170px, 1fr));
+  gap: 1rem;
+}
+
+.experience-card {
+  min-width: 0;
+}
+
+.experience-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 1.6rem;
+  margin-bottom: 0.85rem;
+  background-color: #ececec;
+}
+
+.experience-card h2 {
+  margin: 0 0 0.15rem;
+  color: #111;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.experience-card p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 960px) {
+  .top-nav {
+    padding: 1rem 1.25rem;
+  }
+
+  .top-nav-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brand,
+  .nav-actions {
+    min-width: 0;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+  }
+
+  .nav-actions {
+    justify-content: space-between;
+  }
+
+  .search-bar {
+    grid-template-columns: 1fr;
+    border-radius: 1.75rem;
+    padding: 0.75rem;
+  }
+
+  .search-segment {
+    padding: 0.85rem 0.5rem;
+    border-right: 0;
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  .search-segment:last-of-type {
+    border-bottom: 0;
+  }
+
+  .search-action {
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .experience-grid {
+    grid-template-columns: repeat(3, minmax(170px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-item {
+    padding: 0.95rem 0.8rem 1.1rem;
+    font-size: 0.95rem;
+  }
+
+  .brand-text {
+    font-size: 1.8rem;
+  }
+
+  .page-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .page-section {
+    padding: 1.5rem;
+  }
+
+  .experience-header {
+    align-items: flex-start;
+  }
+
+  .experience-grid {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+  }
+
+  .experience-back {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.6rem;
+  }
+}
